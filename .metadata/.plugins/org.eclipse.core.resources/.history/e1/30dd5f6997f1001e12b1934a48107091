@@ -9,16 +9,17 @@ public class ControlAcheterProduit {
 	private ControlVerifierIdentite controlVerifierIdentite;
 
 	public ControlAcheterProduit(ControlVerifierIdentite controlVerifierIdentite,
-			ControlTrouverEtalVendeur controlTrouverEtalVendeur, Village village) {
+			ControlTrouverEtalVendeur controlTrouverEtalVendeur,
+			Village village) {
 		this.village = village;
 		this.controlVerifierIdentite = controlVerifierIdentite;
 		this.controlTrouverEtalVendeur = controlTrouverEtalVendeur;
 	}
-
+	
 	public boolean isHabitant(String nom) {
 		return controlVerifierIdentite.verifierIdentite(nom);
 	}
-
+	
 	public Gaulois[] vendeursProduit(String produit) {
 		return village.rechercherVendeursProduit(produit);
 	}

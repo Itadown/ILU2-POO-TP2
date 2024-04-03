@@ -55,7 +55,7 @@ public class BoundaryAcheterProduit {
 			}
 		}
 		else {
-			System.out.println("Désolé, il faut être un habitant du village pour acheter dans le marché !\n");
+			System.out.println("Désolé, il faut être un habitant du village pour acheter !\n");
 		}
 	}
 }

@@ -45,7 +45,6 @@ public class Scenario {
 
 		BoundaryEmmenager boundaryEmmenager = new BoundaryEmmenager(
 				controlEmmenager);
-		
 		BoundaryAfficherVillage boundaryAfficherVillageois = new BoundaryAfficherVillage(
 				controlAfficherVillage);
 
